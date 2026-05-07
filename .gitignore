@@ -1,0 +1,158 @@
+# ============================================================
+#  Cataltys — .gitignore
+# ============================================================
+
+# ── Model checkpoints & weights ──────────────────────────────
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.mlmodel
+
+# Checkpoint directories
+backend/checkpoints/
+backend/checkpoints_catalyst/
+backend/checkpoints_rxn/
+backend/checkpoints_*/
+
+# ── Training cache & large data files ────────────────────────
+backend/chace/
+backend/cache/
+backend/data/
+backend/datasets/
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.arrow
+*.feather
+*.msgpack
+*.lmdb
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
+*.gz
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+wheels/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda-meta/
+__pypackages__/
+
+# ── Node / Next.js ────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/dist/
+frontend/build/
+frontend/.vercel/
+frontend/.swc/
+
+# Package manager lock files (keep one, ignore the rest)
+# Uncomment the one you DON'T use:
+# frontend/package-lock.json
+# frontend/yarn.lock
+# frontend/pnpm-lock.yaml
+
+# ── Environment & secrets ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+.envrc
+secrets.json
+secrets.yaml
+
+# ── IDE & editor ──────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+uvicorn*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Hugging Face cache ────────────────────────────────────────
+.cache/
+~/.cache/huggingface/
+backend/.cache/
+
+# ── Misc ──────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.orig
+.scratch/
+tmp/
+temp/
